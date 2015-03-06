@@ -15,6 +15,7 @@
   "license": "MIT",
   "ignore": [
     "**",
+    "!/src/**",
     "!/build/**",
     "!/bower.json",
     "!/README*"
