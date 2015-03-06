@@ -21,6 +21,7 @@
   ],
   "main": [
     "./build/mediaelement-and-player.js",
-    "./build/mediaelementplayer.css"
+    "./build/mediaelementplayer.css",
+    "./src/js/mep-feature-googleanalytics.js"
   ]
 }
