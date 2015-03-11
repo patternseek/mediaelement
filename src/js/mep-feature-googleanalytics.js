@@ -24,7 +24,7 @@ $.extend(MediaElementPlayer.prototype, {
 				_gaq.push(['_trackEvent', 
 					player.options.googleAnalyticsCategory, 
 					player.options.googleAnalyticsEventPlay, 
-					(player.options.googleAnalyticsTitle === '') ? player.currentSrc : player.options.googleAnalyticsTitle
+					(player.options.googleAnalyticsTitle === '') ? player.media.currentSrc : player.options.googleAnalyticsTitle
 				]);
 			}
 		}, false);
@@ -34,7 +34,7 @@ $.extend(MediaElementPlayer.prototype, {
 				_gaq.push(['_trackEvent', 
 					player.options.googleAnalyticsCategory, 
 					player.options.googleAnalyticsEventPause, 
-					(player.options.googleAnalyticsTitle === '') ? player.currentSrc : player.options.googleAnalyticsTitle
+					(player.options.googleAnalyticsTitle === '') ? player.media.currentSrc : player.options.googleAnalyticsTitle
 				]);
 			}
 		}, false);	
@@ -44,7 +44,7 @@ $.extend(MediaElementPlayer.prototype, {
 				_gaq.push(['_trackEvent', 
 					player.options.googleAnalyticsCategory, 
 					player.options.googleAnalyticsEventEnded, 
-					(player.options.googleAnalyticsTitle === '') ? player.currentSrc : player.options.googleAnalyticsTitle
+					(player.options.googleAnalyticsTitle === '') ? player.media.currentSrc : player.options.googleAnalyticsTitle
 				]);
 			}
 		}, false);
